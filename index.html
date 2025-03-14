@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Quiz Engine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="loginForm" class="card">
+        <h2>Enter Your Username</h2>
+        <input type="text" id="username" placeholder="Username">
+        <button id="startQuiz">Start Quiz</button>
+    </div>
+
+    <div id="quizContainer" class="hidden">
+        <div class="card">
+            <div id="questionHeader">
+                <span id="difficulty" class="difficulty"></span>
+                <div id="score">Score: 0</div>
+            </div>
+            <div id="question"></div>
+            <div id="choices"></div>
+            <button id="submitAnswer">Submit Answer</button>
+        </div>
+
+        <div class="card" id="history">
+            <h3>Score History</h3>
+            <ul id="scoreHistory"></ul>
+        </div>
+    </div>
+
+    <div id="error" class="hidden card error"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
