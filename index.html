@@ -9,7 +9,7 @@
 <body>
     <div id="loginForm" class="card">
         <h2>Enter Your Username</h2>
-        <input type="text" id="username" placeholder="Username">
+        <input type="text" id="username" placeholder="Username" required>
         <button id="startQuiz">Start Quiz</button>
     </div>
 
@@ -21,7 +21,7 @@
             </div>
             <div id="question"></div>
             <div id="choices"></div>
-            <button id="submitAnswer">Submit Answer</button>
+            <button id="submitAnswer" disabled>Submit Answer</button>
         </div>
 
         <div class="card" id="history">
@@ -30,7 +30,12 @@
         </div>
     </div>
 
+    <div id="feedback"></div>
     <div id="error" class="hidden card error"></div>
+    <div id="loading" class="hidden">
+        <div class="loader"></div>
+        <p>Loading questions...</p>
+    </div>
 
     <script src="index.js"></script>
 </body>
